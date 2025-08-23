@@ -60,8 +60,16 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="OpcComRcw, Version=2.0.105.1, Culture=neutral, PublicKeyToken=9a40e993cbface53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ext_packages\OpcComRcw.dll</HintPath>
+    </Reference>
     <Reference Include="OpcNetApi">
       <HintPath>..\ext_packages\OpcNetApi.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcNetApi.Com, Version=2.1.105.1, Culture=neutral, PublicKeyToken=9a40e993cbface53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ext_packages\OpcNetApi.Com.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

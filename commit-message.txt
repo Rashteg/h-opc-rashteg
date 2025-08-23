@@ -1,0 +1,14 @@
+CLI: leitura/monitor mostram valor real; write com float/double e virgula; build Release x86
+
+Repl.cs v1.2.1:
+ - Read/Monitor: extrai ReadEvent.Value e imprime "Value=X; Type=Y" (corrige exibicao do tipo ReadEvent).
+ - Write: suporte a Single, Double, Decimal, Byte, SByte e Bool (1/0, on/off, true/false).
+ - Parsing numerico: aceita ponto e virgula; normaliza virgula para ponto antes de converter.
+ - Hint opcional de tipo: write TAG[:type] valor (single|double|decimal|int|i16|i64|u16|u32|u64|bool|string|byte|sbyte).
+ - Help do CLI atualizado (sem acentos).
+
+h-opc-cli.csproj:
+ - pos-compilacao: copia DLLs de ext_packages para TargetDir (xcopy), facilitando deploy portatil.
+
+Solucao/Projetos:
+ - ajustes Release x86 e limpeza de tests na build de release.

@@ -1,0 +1,2 @@
+"%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -Command ^
+  "$opc=New-Object -ComObject 'OPC.Automation.1'; $opc.GetOPCServers('') | ForEach-Object { $_ }"
